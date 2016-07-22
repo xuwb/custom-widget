@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>validator 测试</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="../../src/build/jquery.min.js"></script>
+    <script type="text/javascript" src="../../src/build/sea.js"></script>
+    <script type="text/javascript" src="../../src/seajs-config.js"></script>
+</head>
+<body>
+    <form id="test-form">
+        
+    </form>
+    <script type="text/javascript">
+        seajs.use('./class', function(Class) {
+            // test Extends ==============
+
+            // function fatherClass() {
+            //     this.userName = 'xuwb'
+            // }
+            // fatherClass.prototype.getName = function() {
+            //     console.log('xuwb');
+            //     console.log(this);
+            // }
+            // fatherClass.getAge = function() {}
+
+            //============================
+
+            // function childClass() {
+            //     this.address = '123';
+            // }
+            // childClass.prototype.getAddr = function() {
+        //     console.log(this.address);
+            // }
+            // 继承父类的静态和实例属性
+            // Class.Mutators.Extends.call(childClass, fatherClass);
+            // Class.Mutators.Statics.call(childClass, fatherClass);
+            // 或
+            // var childClass = Class.create(fatherClass, {
+            //     Implements: fatherClass
+            // });
+            // 或
+            // var childClass = Class.create({
+            //     Extends: fatherClass
+            // })
+            // 扩展属性
+            // childClass.implement({
+            //     subFunc: function(){},
+            //     Statics: {
+            //         getSubName: function() {}
+            //     }
+            // })
+            // console.log(childClass)
+            // for(var p in childClass) {
+            //     console.log(p)
+            // }
+            // var child = new childClass();
+            // console.log(child);
+            // child.getName();
+
+            // 或
+            // var subCls = childClass.extend({
+            //     subFunc: function(){},
+            //     Statics: {
+            //         getSubName: function() {}
+            //     }
+            // })
+
+            // for(var p in subCls) {
+            //     console.log(p)
+            // }
+            // var sub = new subCls();
+            // console.log(sub);
+            // sub.getName();
+
+            // end test ==================
+        });
+    </script>
+</body>
+</html>
